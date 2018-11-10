@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Certificate = (props) => {
-  const myCertificates = (
+const Award = (props) => {
+  const myAwards = (
     <div>
-      {props.certificate.map((cert) =>
+      {props.awards.map((cert) =>
         <div className='item' key={cert.name}>
           <h3>{cert.name} @ {cert.institution} <span>{cert.date}</span></h3>
           <p>{cert.description}</p>
@@ -14,10 +14,10 @@ const Certificate = (props) => {
   return (
     <div className='title'>
       <i className='fa fa-trophy'></i>
-      <h2>CERTIFICATES</h2>
-      {myCertificates}
+      <h2>Awards</h2>
+      {myAwards}
     </div>
   )
 };
 
-export default Certificate;
+export default Award;
